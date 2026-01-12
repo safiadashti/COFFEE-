@@ -1,0 +1,134 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #cfcfcf;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
+
+.navbar a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+/* Hero Section */
+.hero {
+  background: #f7f7f7;
+  width: 90%;
+  margin: auto;
+  height: 520px;
+  border-radius: 18px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Left */
+.hero-text span {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.scroll {
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+/* Center Image */
+.hero-image img {
+  width: 260px;
+  border-radius: 50%;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Right Card */
+.coffee-card {
+  background: #fff;
+  padding: 20px;
+  width: 260px;
+  border: 1px solid #ddd;
+}
+
+.coffee-card h2 {
+  margin-bottom: 10px;
+}
+
+.coffee-card p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.coffee-card img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.coffee-card button {
+  width: 100%;
+  padding: 10px;
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.fade {
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 220px;
+  }
+}
